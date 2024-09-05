@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     if (debounceFromText === '') return
 
-    translate({ fromLanguage, toLanguage, text: debounceFromText })
+    translate({ text: debounceFromText, fromLanguage, toLanguage  })
       .then(result => {
         if (result == null) return
         setResult(result)
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Container fluid>
-        <h2>Google Translate</h2>
+        <h2>Imole Translate</h2>
 
         <Row>
           <Col>

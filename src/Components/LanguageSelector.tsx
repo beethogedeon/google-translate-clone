@@ -12,8 +12,8 @@ export function LanguageSelector({ type, value, onChange }: Props) {
     onChange(event.target.value as Language)
   }
   return (
-    <Form.Select aria-label='Selecciona el idioma' onChange={handleChange} value={value}>
-      {type === SectionType.From && <option key={AUTO_LANGUAGE} value={AUTO_LANGUAGE} >Detectar idioma</option>}
+    <Form.Select aria-label='Select a language' onChange={handleChange} value={value}>
+      {type === SectionType.From && <option key={AUTO_LANGUAGE} value={AUTO_LANGUAGE} >Automatic</option>}
 
       {Object.entries(SUPPORTED_LANGUAGES).map(([key, literal]) => (
         <option key={key} value={key}>

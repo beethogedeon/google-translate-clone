@@ -16,7 +16,7 @@ export async function translate({
   const data = { fromCode, toCode, text }
 
   //hacer el fetching a la api backend
-  const response = await fetch('https://google-translate-back.vercel.app/translate', {
+  const response = await fetch('https://imole-translator-eight.vercel.app/translate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

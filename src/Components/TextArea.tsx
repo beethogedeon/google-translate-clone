@@ -11,9 +11,9 @@ interface Props {
 const commonStyles = { border: 0, height: '250px', width: '250px' }
 
 const getPlaceholder = ({ type, loading }: { type: SectionType, loading?: boolean }) => {
-  if (type === SectionType.From) return 'Introduce aquí tu texto'
-  if (loading === true) return 'Cargando...'
-  return 'Traducción'
+  if (type === SectionType.From) return 'Enter your text here'
+  if (loading === true) return 'Loading...'
+  return 'Translation'
 }
 
 export const TextArea = ({ type, loading, onChange, value }: Props) => {

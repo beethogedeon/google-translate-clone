@@ -5,7 +5,7 @@ import { useReducer } from 'react'
 
 const initialState: State = {
   fromLanguage: 'auto',
-  toLanguage: 'en',
+  toLanguage: 'fon',
   fromText: '',
   result: '',
   loading: false
