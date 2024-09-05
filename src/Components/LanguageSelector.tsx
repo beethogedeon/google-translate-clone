@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form'
-import { AUTO_LANGUAGE, SUPPORTED_LANGUAGES } from '../constants'
+import { SUPPORTED_LANGUAGES } from '../constants'
 import { FromLanguage, Language, SectionType } from '../types.d'
 
 type Props =
@@ -13,7 +13,7 @@ export function LanguageSelector({ type, value, onChange }: Props) {
   }
   return (
     <Form.Select aria-label='Select a language' onChange={handleChange} value={value}>
-      {type === SectionType.From && <option key={AUTO_LANGUAGE} value={AUTO_LANGUAGE} >Automatic</option>}
+      {type === SectionType.From /*&& <option key="en" value="en" >English</option>*/}
 
       {Object.entries(SUPPORTED_LANGUAGES).map(([key, literal]) => (
         <option key={key} value={key}>

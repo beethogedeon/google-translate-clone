@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col, Button, Stack } from 'react-bootstrap'
 import './App.css'
 import { useTraductor } from './hooks/useReducer'
-import { AUTO_LANGUAGE } from './constants'
+//import { AUTO_LANGUAGE } from './constants'
 import { ArrowsIcon, ClipBoardIcon } from './Components/Icons'
 import { LanguageSelector } from './Components/LanguageSelector'
 import { TextArea } from './Components/TextArea'
@@ -75,7 +75,7 @@ function App() {
 
           <Col xs='auto'>
             <Button variant='link'
-              disabled={fromLanguage === AUTO_LANGUAGE || fromLanguage === toLanguage}
+              disabled={fromLanguage === toLanguage}
               onClick={() => interchangeLanguages()}>
               <ArrowsIcon />
             </Button>
